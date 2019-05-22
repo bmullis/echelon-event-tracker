@@ -1,0 +1,38 @@
+.dropdown-form__header {
+  background: $theme-gray-light;
+  border-radius: 6px 6px 0 0; 
+  h4 {
+    color: $theme-gray-dark;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 1rem;
+    text-transform: uppercase;
+  }
+}
+.dropdown-form__body {
+  border-radius: 0 0 6px 6px;
+  padding: 1.5rem 1rem 0 1rem;
+}
+.dropdown-form__body form {
+  select {
+    appearance: none;
+  }
+  select, input {
+    border: 1px solid $theme-gray-light;
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    outline: none;
+    padding: 0.75rem;
+    width: 100%;
+  }
+  button {
+    border-radius: 0 0 6px 6px;
+    cursor: pointer;
+    display: block;
+    margin-top: 1.5rem;
+    margin-left: -1rem;
+    width: 116.8%;
+  }
+}

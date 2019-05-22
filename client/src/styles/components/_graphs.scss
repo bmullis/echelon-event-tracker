@@ -1,0 +1,17 @@
+.graphs {
+  align-items: center;
+  background: #191A1A;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  width: 30vw;
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.rv-xy-plot__series--label-text {
+  color: white !important;
+}

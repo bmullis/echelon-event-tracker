@@ -1,0 +1,60 @@
+.button {
+  background: $theme-orange;
+  border: none;
+  color: $theme-gray-light;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  outline: none;
+  transition: all .1s;
+}
+
+.button-round {
+  border-radius: 500px;
+  bottom: 2rem;
+  font-size: 2rem;
+  left: 2rem;
+  position: absolute;
+  height: 4.5rem;
+  width: 4.5rem;
+}
+.button-round.active {
+  background: $theme-orange - #111;
+}
+.button-round__dropdown {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  bottom: 8rem;
+  left: 2rem;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  z-index: 3;
+  h4 {
+    margin: 1rem 0;
+  }
+  ul {
+    padding: 0;
+    margin: 1rem 0;
+    li {
+      list-style: none;
+      padding: 1rem 4rem;
+      &:hover {
+        background: $theme-gray-light;
+        cursor: pointer;
+      }
+    }
+  }
+  &::after {
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    border-top: 20px solid $theme-orange;
+    bottom: -1rem;
+    content: "";
+    height: 0;
+    left: 1.2rem;
+    position: absolute;
+    width: 0;
+    z-index: -1;
+  }
+}
