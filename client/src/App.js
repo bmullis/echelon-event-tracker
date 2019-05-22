@@ -16,10 +16,14 @@ const App = () => {
         <div style={{ display: "flex", flexDirection: "row" }}>
           <EventMap />
           <div className="graphs">
-            <h3>Events by Type</h3>
-            <RadialGraph />
-            <h3>Events by Severity</h3>
-            <RadialGraphSeverity />
+            <div>
+              <h3>Events by Type</h3>
+              <RadialGraph />
+            </div>
+            <div>
+              <h3>Events by Severity</h3>
+              <RadialGraphSeverity />
+            </div>
           </div>
         </div>
       </NewEventContextProvider>

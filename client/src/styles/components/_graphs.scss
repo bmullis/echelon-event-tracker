@@ -4,11 +4,13 @@
   color: white;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   padding: 2rem 1rem;
   width: 30vw;
   h3 {
     font-size: 1.5rem;
     margin-bottom: 0.25rem;
+    text-align: center;
   }
 }
 
