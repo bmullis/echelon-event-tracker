@@ -1,7 +1,10 @@
 const Sequelize = require("sequelize");
+require("dotenv").config();
 
-const sequelize = new Sequelize("echelon_dev", "brian", "", {
-  host: "localhost",
+const connString = process.env.DATABASE_URL;
+
+const sequelize = new Sequelize(connString, {
+  url: process.env.DATABASE_URL,
   dialect: "postgres"
 });
 
